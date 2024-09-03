@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>New member</title>
+  <link rel="stylesheet" href="Dwangwa2.css">
+</head>
+<body>
+  <header>
+    <img src="/storage/emulated/0/Pictures/facebook/1719741381111.jpg" alt="Dwangwa CCAP Logo">
+    <h1>DWANGWA CCAP</h1>
+        <div class="one">
+    <nav>
+      <ul>
+                <li><a href="Dwangwa.html">Home</a></li>
+        <li>
+          <a href="pastors.html">
+            <img id="heads" src="/storage/emulated/0/Pictures/facebook/1719741381111.jpg" alt="Church Logo">
+            Pastors
+          </a>
+        </li>
+        <li>
+          <a href="church-elder.html">
+            <img id="heads" src="/storage/emulated/0/Pictures/facebook/1719741381111.jpg" alt="Church Logo">
+            Church Elders
+          </a>
+        </li>
+        <li>
+          <a href="youth-ministry.html">
+            <img id="heads" src="/storage/emulated/0/Majawa (1)/IMG-20230326-WA0058.jpg"alt="Church Logo">
+            Youth Ministry
+          </a>
+        </li>
+        <a href="christians.html">
+            <img id="heads" src="/storage/emulated/0/Pictures/facebook/1719741381111.jpg" alt="Church Logo">
+            Christians
+          </a>
+        </li>
+        <li>
+          <a href="DwangwaDepertments.html">
+            <img id="heads" src="/storage/emulated/0/Pictures/facebook/1719741381111.jpg" alt="Church Logo">
+            Departments
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    </div>
+  </header>
+  
+</head>
+<body>
+     <form action="http://www.example.org/subscribe.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+<legend style="color:Red;">Register New Member</legend>
+        <label>First Name:<br />
+<input type="text" name="fname" /></label><br />
+        <label>Middle Name:<br />
+<input type="text" name="MName" /></label><br />
+        <label>Last Name:<br />
+<input type="text" name="LName" /></label><br />
+<label>What is your role in the church:<br />
+<input type="text" name="email" /></label><br />
+        <label>Name of Church You are coming from:<br />
+<input type="text"/></label><br />
+        
+        <label>Your Current Location:<br />
+        <input type="text" name="Full name" /></label><br />
+         <label>Nationality:<br />
+        <input type="text" name="country" /></label><br />
+        <label>Phone Number:<br />
+<input type="number" name="number" /></label><br />
+        
+        <label>Age: <input type="text" name="age" /></label>
+<br/ >
+Gender:
+<input id="female" type="radio" name="gender"
+value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" 
+value="m">
+<label for="male">Male</label>
+
+
+  <p style="color:Red;">Upload Your image below</p>
+  <input type="file" id="photo-upload" accept="image/*">
+<img id="uploaded-photo" src="" alt="Uploaded Photo">
+  <label for="photo-upload" class="upload-button">Upload</label>
+    <br>
+    <input type="submit" value="Register" class="submit-button">
+  </fieldset>
+  
+<script>
+  const photoUpload = document.getElementById('photo-upload');
+  const uploadedPhoto = document.getElementById('uploaded-photo');
+
+  photoUpload.addEventListener('change', function() {
+    const file = photoUpload.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function() {
+      uploadedPhoto.src = reader.result;
+    };
+
+    reader.readAsDataURL(file);
+  });
+</script>
+
+</body>
+</html>
